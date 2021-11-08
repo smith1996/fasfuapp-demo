@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingItem">
+            <connections>
+                <outlet property="backgrounImageView" destination="SQH-w4-atF" id="kpn-bg-Z1i"/>
+                <outlet property="blueTitleLabel" destination="23k-H4-ojw" id="Jmo-me-Kao"/>
+                <outlet property="contentView" destination="9cd-Q2-YHR" id="UaE-37-ilC"/>
+                <outlet property="descriptionLabel" destination="eHu-Js-zli" id="ZfV-vG-hGI"/>
+                <outlet property="grayTitleLabel" destination="Ahr-f1-ZwJ" id="J9L-4a-WY7"/>
+                <outlet property="logoImageView" destination="z4q-e9-mZ6" id="CzZ-rU-A4R"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-fasfu" translatesAutoresizingMaskIntoConstraints="NO" id="SQH-w4-atF">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="470"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="470" id="GiY-3S-CMX"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-azul" translatesAutoresizingMaskIntoConstraints="NO" id="z4q-e9-mZ6">
+                    <rect key="frame" x="70" y="37" width="94.666666666666686" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="wAR-yZ-1xT"/>
+                        <constraint firstAttribute="width" secondItem="z4q-e9-mZ6" secondAttribute="height" multiplier="9:4" id="wn2-UE-viP"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VxE-My-HDt">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.35013848108961093" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9cd-Q2-YHR">
+                    <rect key="frame" x="0.0" y="380" width="414" height="320"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Las mejores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahr-f1-ZwJ">
+                            <rect key="frame" x="111.66666666666667" y="90" width="190.66666666666663" height="35"/>
+                            <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
+                            <color key="textColor" name="second-color"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamburguesas!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23k-H4-ojw">
+                            <rect key="frame" x="83.666666666666671" y="125" width="246.66666666666663" height="35"/>
+                            <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="28"/>
+                            <color key="textColor" name="primary-color"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nos une el amor por las hamburguesas, las risas con los amigos y las ganas de estar cerca siempre." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHu-Js-zli">
+                            <rect key="frame" x="29.666666666666657" y="195" width="355" height="87.666666666666686"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="355" id="uNY-g7-8nf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
+                            <color key="textColor" red="0.20000156760000001" green="0.19999706749999999" blue="0.20000010730000001" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="eHu-Js-zli" firstAttribute="centerX" secondItem="9cd-Q2-YHR" secondAttribute="centerX" id="1kg-GP-wUi"/>
+                        <constraint firstAttribute="bottom" secondItem="eHu-Js-zli" secondAttribute="bottom" constant="37.329999999999998" id="8TM-yA-5HB"/>
+                        <constraint firstItem="23k-H4-ojw" firstAttribute="centerX" secondItem="9cd-Q2-YHR" secondAttribute="centerX" id="NxO-uB-zP5"/>
+                        <constraint firstItem="23k-H4-ojw" firstAttribute="top" secondItem="Ahr-f1-ZwJ" secondAttribute="bottom" id="a8H-2b-b3t"/>
+                        <constraint firstItem="eHu-Js-zli" firstAttribute="top" secondItem="23k-H4-ojw" secondAttribute="bottom" constant="35" id="o78-TD-bW5"/>
+                        <constraint firstAttribute="height" constant="320" id="u4a-o2-vCe"/>
+                        <constraint firstItem="Ahr-f1-ZwJ" firstAttribute="centerX" secondItem="9cd-Q2-YHR" secondAttribute="centerX" id="ytF-J0-67G"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="SQH-w4-atF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2jV-HD-j4M"/>
+                <constraint firstItem="SQH-w4-atF" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="32N-PZ-jTN"/>
+                <constraint firstItem="9cd-Q2-YHR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Hd8-1O-KIR"/>
+                <constraint firstItem="z4q-e9-mZ6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="37" id="J13-Al-VdA"/>
+                <constraint firstAttribute="trailing" secondItem="9cd-Q2-YHR" secondAttribute="trailing" id="SFf-C2-zMt"/>
+                <constraint firstAttribute="trailing" secondItem="VxE-My-HDt" secondAttribute="trailing" id="WTa-Yh-89p"/>
+                <constraint firstItem="z4q-e9-mZ6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="70" id="bl7-9b-PCL"/>
+                <constraint firstItem="SQH-w4-atF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fUk-op-eYe"/>
+                <constraint firstItem="VxE-My-HDt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lNH-AT-XeQ"/>
+                <constraint firstAttribute="bottom" secondItem="9cd-Q2-YHR" secondAttribute="bottom" id="nHQ-Gi-NoR"/>
+                <constraint firstAttribute="bottom" secondItem="VxE-My-HDt" secondAttribute="bottom" id="nfu-hP-X1C"/>
+                <constraint firstItem="VxE-My-HDt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zh5-hc-ZNW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="247.82608695652175" y="144.64285714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background-fasfu" width="287" height="285.66665649414062"/>
+        <image name="logo-azul" width="97.333335876464844" height="29"/>
+        <namedColor name="primary-color">
+            <color red="0.050999999046325684" green="0.059000000357627869" blue="0.60000002384185791" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="second-color">
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="acw-zt-nTR">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="SPQ-ha-Qs0">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="acw-zt-nTR" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gKx-Qk-QT0">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="En6-ur-Jgv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4lp-tG-7pl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-961" y="88"/>
+        </scene>
+        <!--OnboardingVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="OnboardingVC" customModule="fasfu_demo_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g23-hx-XBy"/>
+                        <viewControllerLayoutGuide type="bottom" id="MJc-bS-9fh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aaK-Y1-0mS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nmk-RQ-A99">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="740"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="740" id="xCG-eQ-QWB"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="fC1-LT-CLk" kind="embed" identifier="goOnboardingPage" id="yvn-Uu-1L2"/>
+                                </connections>
+                            </containerView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="JKP-oe-0ID">
+                                <rect key="frame" x="146.66666666666666" y="710" width="120.99999999999997" height="27"/>
+                                <color key="pageIndicatorTintColor" red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" name="primary-color"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hq3-Lu-XnI">
+                                <rect key="frame" x="92" y="782" width="230" height="50"/>
+                                <color key="backgroundColor" name="primary-color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="5zf-If-Xxf"/>
+                                    <constraint firstAttribute="height" constant="50" id="igS-0J-M2l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                <state key="normal" title="Empezar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="U40-Ip-iRP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nmk-RQ-A99" firstAttribute="leading" secondItem="aaK-Y1-0mS" secondAttribute="leading" id="JJ1-7i-EwR"/>
+                            <constraint firstItem="JKP-oe-0ID" firstAttribute="centerX" secondItem="aaK-Y1-0mS" secondAttribute="centerX" id="NP8-E0-9RX"/>
+                            <constraint firstItem="hq3-Lu-XnI" firstAttribute="top" secondItem="nmk-RQ-A99" secondAttribute="bottom" constant="42" id="Nom-V3-Eh3"/>
+                            <constraint firstItem="MJc-bS-9fh" firstAttribute="top" secondItem="hq3-Lu-XnI" secondAttribute="bottom" constant="30" id="RNm-9Q-eE2"/>
+                            <constraint firstItem="hq3-Lu-XnI" firstAttribute="centerX" secondItem="aaK-Y1-0mS" secondAttribute="centerX" id="WJy-xW-snq"/>
+                            <constraint firstItem="nmk-RQ-A99" firstAttribute="top" secondItem="aaK-Y1-0mS" secondAttribute="top" id="gBB-sN-sY0"/>
+                            <constraint firstItem="hq3-Lu-XnI" firstAttribute="top" secondItem="JKP-oe-0ID" secondAttribute="bottom" constant="35" id="rSJ-lI-HtT"/>
+                            <constraint firstAttribute="trailing" secondItem="nmk-RQ-A99" secondAttribute="trailing" id="s7T-HP-viO"/>
+                            <constraint firstItem="JKP-oe-0ID" firstAttribute="top" secondItem="nmk-RQ-A99" secondAttribute="bottom" constant="10" id="yLJ-10-pJy"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="JKP-oe-0ID"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="3uH-Un-gvD"/>
+                    <connections>
+                        <outlet property="pageControl" destination="JKP-oe-0ID" id="cGb-nj-ONs"/>
+                        <outlet property="startButton" destination="hq3-Lu-XnI" id="qEK-Mw-WaO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-114.49275362318842" y="87.723214285714278"/>
+        </scene>
+        <!--Onboarding PageVC-->
+        <scene sceneID="Bav-uR-JCR">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="fC1-LT-CLk" customClass="OnboardingPageVC" customModule="fasfu_demo_app" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WmN-bL-Tz8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-114" y="774"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="primary-color">
+            <color red="0.050999999046325684" green="0.059000000357627869" blue="0.60000002384185791" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
